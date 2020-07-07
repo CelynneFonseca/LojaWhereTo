@@ -11,19 +11,19 @@ namespace LojaWhereTo.Dominio.ObjetoDeValor
         public string Nome { get; set; }
         public string Descricao { get; set; }
         public bool SeBoleto {
-            get { return Id == (int)TipoFormaPagamento.Boleto; } 
+            get { return Id == (int)TipoFormaPagamentoEnum.Boleto; } 
         }
         public bool SeCartaoCredito
         {
-            get { return Id == (int)TipoFormaPagamento.CartaoCredito; }
+            get { return Id == (int)TipoFormaPagamentoEnum.CartaoCredito; }
         }
         public bool SeDeposito
         {
-            get { return Id == (int)TipoFormaPagamento.Deposito; }
+            get { return Id == (int)TipoFormaPagamentoEnum.Deposito; }
         }
         public bool SeNaoFoiDefinido
         {
-            get { return Id == (int)TipoFormaPagamento.NaoDefinido; }
+            get { return Id == (int)TipoFormaPagamentoEnum.NaoDefinido; }
         }
     }
 }

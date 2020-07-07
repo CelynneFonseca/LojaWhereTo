@@ -1,0 +1,12 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace LojaWhereTo.Dominio.Contratos
+{
+    public interface IUsuarioRepositorio : IBaseRepositorio<Usuario>
+    {
+        Usuario Obter(string email, string senha);
+        Usuario Obter(string email);
+    }
+}
